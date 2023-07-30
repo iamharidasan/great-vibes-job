@@ -114,7 +114,7 @@ const Create = ({ screen, setScreen, callback }) => {
     let config = {
       method: "post",
       maxBodyLength: Infinity,
-      url: "/jobs",
+      url: "https://64c4c75a67cfdca3b660f669.mockapi.io/jobs",
       headers: {
         "Content-Type": "application/json",
       },

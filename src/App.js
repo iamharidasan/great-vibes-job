@@ -17,7 +17,9 @@ function App() {
     setShowCreateModal((prevState) => false)
   }
   const getJobs = async () => {
-    const results = await Axios.get("/jobs")
+    const results = await Axios.get(
+      "https://64c4c75a67cfdca3b660f669.mockapi.io/jobs"
+    )
     setJobs(results.data)
   }
   const postCreate = () => {

@@ -122,7 +122,7 @@ const Edit = ({ screen, setScreen, callback, id }) => {
     let config = {
       method: "put",
       maxBodyLength: Infinity,
-      url: `/jobs/${id}`,
+      url: `https://64c4c75a67cfdca3b660f669.mockapi.io/jobs/${id}`,
       headers: {
         "Content-Type": "application/json",
       },

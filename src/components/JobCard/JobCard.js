@@ -32,7 +32,7 @@ const JobCard = ({
     const result = window.confirm("Are you sure to delete?")
     if (result) {
       await axios
-        .delete("/jobs/" + id)
+        .delete("https://64c4c75a67cfdca3b660f669.mockapi.io/jobs/" + id)
         .then((response) => {
           callback()
         })
