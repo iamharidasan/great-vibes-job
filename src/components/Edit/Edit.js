@@ -26,7 +26,9 @@ const Edit = ({ screen, setScreen, callback, id }) => {
   }, [id])
 
   const getJobDetail = async (id) => {
-    const result = await axios.get(`/jobs/${id}`)
+    const result = await axios.get(
+      `https://64c4c75a67cfdca3b660f669.mockapi.io/jobs/${id}`
+    )
     setFormData((prevState) => result.data)
   }
   const nextPageHandler = () => {
